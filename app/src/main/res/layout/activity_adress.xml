@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_adress_back"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:padding="11dp"
+            android:src="@drawable/next" />
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="33dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/main_color"
+                android:gravity="center"
+                android:text="送货上门"
+                android:textColor="@color/color_3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="店铺自提"
+                android:textColor="@color/color_3" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rela_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/img_loc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/tv_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/img_loc"
+                android:text="定位到当前位置"
+                android:textColor="@color/color_3"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/re_address_cityList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/white">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

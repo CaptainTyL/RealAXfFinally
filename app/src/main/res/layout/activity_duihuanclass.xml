@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Base.Home.Fragment.MinePager.DuiHuanClass"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        >
+        <ImageView
+            android:id="@+id/img_zuofanhui"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/next"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分商城"
+            android:textSize="16dp"
+            android:textColor="#333"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/icon_jifenshangchenguihuanbeijing">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员积分"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/tv_jifena"
+            android:layout_centerHorizontal="true"
+            />
+        <com.chaychan.viewlib.NumberRunningTextView
+
+            android:id="@+id/tv_jifena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100.00"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:frameNum="70"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_duihuanjilu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="42dp"
+                android:src="@drawable/icon_duihuanjilu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兑换记录"
+                android:textColor="#333"
+                android:textSize="14dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#F0F0F0"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img_duihuanjifeng"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/icon_duihuanguizhe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兑换规则"
+                android:textColor="#333"
+                android:textSize="14dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F0F0F0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_duihuanjilu1"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_mincgen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3元优惠卷"
+                android:textColor="#333"
+                android:textSize="13dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img_duihuanjilu1"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="900积分"
+                android:textColor="#FF4040"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_mincgen"
+
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#F0F0F0"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img_duihuanjilu11"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+
+                 />
+
+            <TextView
+                android:id="@+id/tv_mincgen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5元优惠卷"
+                android:textColor="#333"
+                android:textSize="13dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img_duihuanjilu11"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1500积分"
+                android:textColor="#FF4040"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_mincgen1"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"/>
+</LinearLayout>
